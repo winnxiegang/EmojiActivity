@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/emojLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <com.operations.winsky.emojiactivity.EmojiEditTextView
+            android:id="@+id/inputCommentEt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="12dp"
+            android:background="#ffffff"
+            android:hint="和主播聊聊吧~"
+            android:imeActionLabel="发送"
+            android:imeOptions="actionSend|flagNoExtractUi"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1" />
+
+        <com.lwj.widget.viewpagerindicator.ViewPagerIndicator
+            android:id="@+id/circles"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#efefef"
+            app:vpi_default_color="#cdcdcd"
+            app:vpi_distance="100dp"
+            app:vpi_distanceType="BY_LAYOUT"
+            app:vpi_indicatorType="CIRCLE"
+            app:vpi_length="24dp"
+            app:vpi_radius="8dp"
+            app:vpi_selected_color="#FF23EEF5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f8f8f8"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="#e6e6e6"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/emoj_angrya" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
